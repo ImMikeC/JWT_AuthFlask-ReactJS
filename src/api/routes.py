@@ -20,3 +20,9 @@ def create_token():
 
     access_token = create_access_token(identity=email)
     return jsonify(access_token=access_token)
+
+@api.route("/token", methods=["GET"])
+def get_token():
+    #access_token = create_access_token(identity=1234)
+    #return jsonify(access_token=access_token)
+    return 'hola, boludo'
